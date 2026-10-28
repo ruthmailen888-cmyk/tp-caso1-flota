@@ -1,43 +1,55 @@
-# Caso 1: gestión de flota y mantenimiento
+# Caso 1: Gestión de flota y mantenimiento
 
-Trabajo Práctico 2, etapa 2. Informática Aplicada, Tecnicatura Universitaria en Logística, UTN. Alumnas: Benitez Yanila Jasmin; Martinez Ruth Maillen , Dominguez Leonardo.
+**Trabajo Práctico 2 – Etapa 2**
+**Materia:** Informática Aplicada
+**Carrera:** Tecnicatura Universitaria en Logística – UTN
 
-Aplicación web (React, TypeScript, Vite) sobre una base de datos Supabase (PostgreSQL). Todos los datos son inventados.
+**Integrantes:** Yanila Jasmin Benítez, Ruth Maillen Martínez y Leonardo Domínguez.
 
-## Contenido
+## Descripción del proyecto
 
-- `src/`: aplicación web.
-- `supabase/migrations/0001_etapa1.sql`: base de la etapa 1 (tablas, reglas, triggers, RLS).
-- `supabase/migrations/0002_etapa2.sql`: cambios de la etapa 2 (migración aditiva).
-- `supabase/seed.sql`: datos ficticios de demostración.
-- `docs/`: documento descriptivo, MER (etapas 1 y 2), modelo relacional, PDF de entrega y capturas.
+Este proyecto consiste en desarrollar una aplicación web para la gestión de una flota de vehículos y el control de su mantenimiento.
+
+La aplicación permite organizar la información de los vehículos y realizar diferentes consultas según el rol de cada usuario. También contempla el seguimiento de las salidas, las alertas, los controles necesarios antes de utilizar un vehículo y las tareas de mantenimiento.
+
+El objetivo es tener la información organizada en un solo lugar y facilitar el control de las actividades relacionadas con la flota.
+
+## Objetivo
+
+Aplicar los conocimientos adquiridos en la materia para desarrollar un sistema que ayude a organizar la información y mejorar el seguimiento de los vehículos, teniendo en cuenta la importancia del mantenimiento y el control dentro de una empresa de transporte.
+
+## Tecnologías utilizadas
+
+Para desarrollar el proyecto se utilizaron las siguientes herramientas:
+
+* **React:** para construir la interfaz de la aplicación.
+* **TypeScript:** para trabajar con el código de manera organizada.
+* **Vite:** para ejecutar y preparar la aplicación web.
+* **Supabase y PostgreSQL:** para almacenar y administrar los datos.
+
+## Organización del proyecto
+
+El repositorio contiene los siguientes archivos y carpetas principales:
+
+* `src/`: contiene el código de la aplicación web.
+* `supabase/`: contiene los archivos relacionados con la base de datos.
+* `supabase/migrations/`: incluye los cambios realizados en la estructura de la base de datos durante las distintas etapas.
+* `supabase/seed.sql`: contiene datos ficticios para realizar pruebas.
+* `docs/`: incluye la documentación del proyecto, los modelos de datos y las capturas de pantalla.
 
 ## Puesta en marcha
 
-1. Crear un proyecto en Supabase. En el editor SQL ejecutar, en este orden, `0001_etapa1.sql`, `0002_etapa2.sql` y `seed.sql`.
-2. Copiar `.env.example` a `.env` y completar las dos variables con la URL del proyecto y la clave anónima (Project Settings, API). El archivo `.env` no se sube al repositorio.
-3. `npm install` y luego `npm run dev`.
+Para ejecutar el proyecto en un entorno local, es necesario:
 
-## Despliegue en Vercel
+1. Crear un proyecto en Supabase y configurar la base de datos con los archivos SQL incluidos en el repositorio.
+2. Configurar las variables de entorno necesarias para conectar la aplicación con Supabase.
+3. Instalar las dependencias del proyecto mediante `npm install`.
+4. Iniciar la aplicación con `npm run dev`.
 
-Importar el repositorio, cargar `VITE_SUPABASE_URL` y `VITE_SUPABASE_ANON_KEY` en las variables de entorno del proyecto y desplegar. Framework: Vite; comando de build `npm run build`; salida `dist`.
+## Datos utilizados
 
-## Seguridad
+Los datos incluidos en el proyecto son ficticios y se utilizan únicamente con fines de demostración y prueba.
 
-- Las credenciales nunca van en el repositorio: solo `.env.example`, con los nombres y sin valores.
-- Si alguna clave llegara a subirse, hay que rotarla en Supabase.
-- La seguridad por filas (RLS) está activa en todas las tablas. Las políticas son abiertas porque la demostración elige el rol en pantalla; para producción corresponde usar Supabase Auth y políticas por rol.
+## Conclusión
 
-## Capturas
-
-![supervisor tablero](docs/screenshots/01_supervisor_tablero.png)
-![supervisor alertas](docs/screenshots/02_supervisor_alertas.png)
-![supervisor salidas](docs/screenshots/03_supervisor_salidas.png)
-![chofer chequeo](docs/screenshots/04_chofer_chequeo.png)
-![chofer error vtv](docs/screenshots/05_chofer_error_vtv.png)
-![chofer salida cerrada](docs/screenshots/06_chofer_salida_cerrada.png)
-![taller preventivos](docs/screenshots/07_taller_preventivos.png)
-![taller mantenimientos](docs/screenshots/08_taller_mantenimientos.png)
-![panol repuestos](docs/screenshots/09_panol_repuestos.png)
-![admin maestros](docs/screenshots/10_admin_maestros.png)
-![supervisor tablero final](docs/screenshots/11_supervisor_tablero_final.png)
+El desarrollo de este trabajo permite relacionar los conocimientos de informática con situaciones propias de la logística. La organización de los datos y el seguimiento de los vehículos son aspectos importantes para llevar un mejor control de la flota y de sus tareas de mantenimiento.
