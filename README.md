@@ -1,6 +1,6 @@
 # Caso 1: gestión de flota y mantenimiento
 
-Trabajo Práctico 2, etapa 2. Informática Aplicada, Tecnicatura Universitaria en Logística, UTN. Alumnas: Yanila Jazmin Benítez; Ruth Maillén Martinez.
+Trabajo Práctico 2, etapa 2. Informática Aplicada, Tecnicatura Universitaria en Logística, UTN. Alumnas: Benitez Yanila Jasmin; Martinez Ruth Maillen , Dominguez Leonardo.
 
 Aplicación web (React, TypeScript, Vite) sobre una base de datos Supabase (PostgreSQL). Todos los datos son inventados.
 
