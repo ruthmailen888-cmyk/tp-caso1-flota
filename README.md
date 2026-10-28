@@ -4,7 +4,7 @@
 **Materia:** Informática Aplicada
 **Carrera:** Tecnicatura Universitaria en Logística – UTN
 
-**Integrantes:** Yanila Jasmin Benítez, Ruth Maillen Martínez y Leonardo Domínguez.
+**Integrantes:** Yanila Jazmin Benítez, Ruth Maillen Martínez y Leonardo Domínguez.
 
 ## Descripción del proyecto
 
